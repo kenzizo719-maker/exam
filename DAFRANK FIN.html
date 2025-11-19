@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DAFRANK Financial Services — Trusted Microfinance & Loans</title>
+  <meta name="description" content="DAFRANK Financial Services — reliable microfinance, savings, loans and business advisory services in Uganda." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0b6cf3; /* primary blue */
+      --accent-2:#0b9e6f; /* green supporting */
+      --muted:#6b7280;
+      --bg:#f8fafc;
+      --card:#ffffff;
+      --radius:14px;
+      --max-width:1100px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.45}
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+    header{background:linear-gradient(90deg, rgba(11,108,243,0.08), rgba(11,158,111,0.04));backdrop-filter:blur(4px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:54px;height:54px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:18px}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:inherit;text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;padding:40px 0}
+    .hero-grid{display:flex;flex-direction:column;gap:18px}
+    .h-title{font-size:28px;font-weight:800;margin:0}
+    .h-sub{color:var(--muted);margin:0}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:2px solid rgba(15,23,42,0.06)}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .service h4{margin:0 0 8px 0}
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .testimonial{display:flex;gap:12px;align-items:center}
+    footer{padding:28px 0;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:980px){
+      .services,.how,.product-grid{grid-template-columns:repeat(2,1fr)}
+      .h-title{font-size:26px}
+    }
+    @media (max-width:640px){
+      .nav{flex-direction:column;align-items:flex-start;gap:12px}
+      nav ul{display:none}
+      .hero{padding:20px 0}
+      .services,.how,.product-grid{grid-template-columns:1fr}
+      .h-title{font-size:22px}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .small{font-size:14px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(11,108,243,0.08);font-weight:700;color:var(--accent)}
+    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3;font-size:15px}
+    label{display:block;margin-bottom:6px;font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">DF</div>
+          <div>
+            <div style="font-weight:800">DAFRANK Financial Services</div>
+            <div class="small muted">Trusted microfinance & business advisory</div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#how">How it Works</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+            <div style="flex:1">
+              <div class="pill">Local · Licensed · Reliable</div>
+              <h1 class="h-title">Affordable loans, dependable savings — empowering Ugandan entrepreneurs.</h1>
+              <p class="h-sub">Short-term business loans, group microloans, savings accounts and tailored advisory services to help your business grow.</p>
+              <div class="cta-row" style="margin-top:14px">
+                <a class="btn btn-primary" href="#apply">Apply now</a>
+                <a class="btn btn-ghost" href="#products">View products</a>
+              </div>
+            </div>
+            <div style="width:320px;max-width:40%">
+              <div style="background:linear-gradient(180deg, rgba(11,108,243,0.06), rgba(11,158,111,0.04));padding:16px;border-radius:12px">
+                <strong>Quick loan calculator</strong>
+                <p class="small muted">Estimate monthly repayment</p>
+                <div style="display:flex;gap:8px;margin-top:8px">
+                  <input id="loanAmount" type="number" placeholder="Amount (UGX)" />
+                  <input id="loanMonths" type="number" placeholder="Months" />
+                </div>
+                <button class="btn" onclick="calculate()" style="margin-top:10px">Calculate</button>
+                <div id="calcResult" class="small muted" style="margin-top:8px">Monthly repayment: —</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:18px;flex-wrap:wrap">
+          <div class="card" style="flex:1;min-width:250px">
+            <h3 style="margin-top:0">Our reach</h3>
+            <p class="muted small">Serving Kampala and surrounding districts with branch and mobile banking options. Transparent fees, fast decisions.</p>
+          </div>
+          <div class="card" style="min-width:260px">
+            <h3 style="margin-top:0">Why choose us</h3>
+            <ul class="small muted">
+              <li>Competitive interest rates and flexible terms</li>
+              <li>Fast approvals for repeat customers</li>
+              <li>Financial literacy & business coaching</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" style="margin-top:22px">
+      <h2>Services</h2>
+      <div class="services">
+        <div class="card service">
+          <h4>Micro & SME Loans</h4>
+          <p class="muted small">Working capital, inventory and equipment loans from UGX 200,000 to UGX 50,000,000.</p>
+        </div>
+        <div class="card service">
+          <h4>Savings Accounts</h4>
+          <p class="muted small">Secure savings with competitive interest and easy withdrawals.</p>
+        </div>
+        <div class="card service">
+          <h4>Business Advisory</h4>
+          <p class="muted small">Business planning, bookkeeping and market access support for small enterprises.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" style="margin-top:28px">
+      <h2>Products</h2>
+      <div class="product-grid">
+        <div class="card">
+          <h4>Starter Loan</h4>
+          <p class="muted small">Short-term microloan for traders and small vendors. Quick approval and simple requirements.</p>
+        </div>
+        <div class="card">
+          <h4>Growth Loan</h4>
+          <p class="muted small">Medium-term credit designed for growing MSMEs with repayment plans up to 24 months.</p>
+        </div>
+        <div class="card">
+          <h4>Group Loan</h4>
+          <p class="muted small">Loans for savings & credit groups with group guarantee and lower individual collateral needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" style="margin-top:28px">
+      <h2>How it works</h2>
+      <div class="how">
+        <div class="card">
+          <h4>1. Apply</h4>
+          <p class="muted small">Fill a short application online or visit a branch.</p>
+        </div>
+        <div class="card">
+          <h4>2. Quick assessment</h4>
+          <p class="muted small">We verify your business details and propose terms.</p>
+        </div>
+        <div class="card">
+          <h4>3. Receive funds</h4>
+          <p class="muted small">Funds are disbursed to mobile money or bank account after approval.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" style="margin-top:28px">
+      <h2>Testimonials</h2>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px">
+        <div class="card">
+          <div class="testimonial">
+            <div style="width:56px;height:56px;border-radius:12px;background:#eef2ff;display:flex;align-items:center;justify-content:center;font-weight:700">AM</div>
+            <div>
+              <div style="font-weight:700">Amos, Grocery owner</div>
+              <div class="muted small">"The Growth Loan helped me buy stock for the festive season — approval was fast and helpful."</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="testimonial">
+            <div style="width:56px;height:56px;border-radius:12px;background:#eefaf2;display:flex;align-items:center;justify-content:center;font-weight:700">RA</div>
+            <div>
+              <div style="font-weight:700">Ruth, Salon owner</div>
+              <div class="muted small">"The advisory sessions improved my bookkeeping and customer service — my sales grew 30% in 3 months."</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apply" style="margin-top:28px">
+      <h2>Apply / Contact</h2>
+      <div style="display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:12px">
+        <div class="card">
+          <form id="contactForm" onsubmit="submitForm(event)">
+            <label for="name">Full name</label>
+            <input id="name" required />
+
+            <label for="phone">Phone or Mobile Money</label>
+            <input id="phone" required />
+
+            <label for="email">Email (optional)</label>
+            <input id="email" type="email" />
+
+            <label for="message">Tell us your need (loan amount, business)</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <div style="display:flex;gap:8px;margin-top:12px">
+              <button class="btn btn-primary" type="submit">Send application</button>
+              <button class="btn" type="button" onclick="location.href='#contact'">Branch locations</button>
+            </div>
+            <div id="formStatus" class="small muted" style="margin-top:8px"></div>
+          </form>
+        </div>
+
+        <div class="card" id="contact">
+          <h4 style="margin-top:0">Contact & branches</h4>
+          <p class="muted small">Head office (placeholder): Kampala — Nakawa / Industrial Area</p>
+          <p class="muted small">Phone: +256 7XX XXX XXX</p>
+          <p class="muted small">Email: info@dafrank.example (replace with real address before launch)</p>
+          <div style="margin-top:12px">
+            <strong>Business hours</strong>
+            <p class="small muted">Mon — Fri: 8:00 — 17:00<br>Sat: 9:00 — 12:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <strong>DAFRANK Financial Services</strong>
+        <div class="small muted">© <span id="year"></span> All rights reserved</div>
+      </div>
+      <div class="small muted">Privacy · Terms · Responsible lending policy</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function calculate(){
+      const a=Number(document.getElementById('loanAmount').value || 0);
+      const m=Number(document.getElementById('loanMonths').value || 1);
+      if(!a || !m){document.getElementById('calcResult').textContent='Monthly repayment: enter amount and months.';return}
+      const r = 0.03; // example monthly rate (3%) — replace with real rate
+      const payment = (a * r) / (1 - Math.pow(1+r, -m));
+      document.getElementById('calcResult').textContent = 'Monthly repayment: UGX ' + Math.round(payment).toLocaleString();
+    }
+
+    function submitForm(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.textContent = 'Sending application...';
+      // NOTE: This is a placeholder. Replace with real API endpoint or email integration.
+      setTimeout(()=>{
+        status.textContent = 'Application received. We will contact you within 2 business days.';
+        document.getElementById('contactForm').reset();
+      },900);
+    }
+  </script>
+</body>
+</html>
